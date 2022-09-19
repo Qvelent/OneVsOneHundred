@@ -32,9 +32,7 @@ namespace Scripts
         {
             return _direction.x * moveSpeed;
         }
-        
-        
-        
+
         public void SetDirection(Vector3 direction)
         {
             _direction = direction;
