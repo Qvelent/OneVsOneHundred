@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Rotate : MonoBehaviour {
+namespace Voodoo.VoodooCustomCharacter.Demo.Scripts
+{
+    public class Rotate : MonoBehaviour {
 
-    public float speed;
-    public Vector3 eulerAngles;
+        public float speed;
+        public Vector3 eulerAngles;
 
-	void Update () {
-        transform.Rotate(eulerAngles * speed * Time.deltaTime);
-	}
+        private void Update () {
+            transform.Rotate(eulerAngles * (speed * Time.deltaTime));
+        }
+    }
 }
